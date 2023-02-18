@@ -1,4 +1,4 @@
-const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+const { When, Then} = require("@badeball/cypress-cucumber-preprocessor");
 
 When('I navigate to website', ()=> {
     cy.visit("https://www.way2automation.com/way2auto_jquery/registration.php#load_box");
