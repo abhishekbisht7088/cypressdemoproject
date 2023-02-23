@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "npm cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "Suite1": "npx cypress run --spec cypress/e2e/CucumberBDD/Applicationlogin.feature",
+    "Sanity": "npx cypress run --spec cypress/e2e/CucumberBDD/Applicationlogin.feature",
+    "Suite2": "npx cypress run --spec cypress/e2e/CucumberBDD/Actionpractice.feature"
+    },
+
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": [

@@ -1,4 +1,10 @@
 /// <reference types = "cypress" />
+const { Before, When, Then} = require("@badeball/cypress-cucumber-preprocessor");
+
+Before(() => {      //belongs to the cucumber
+    cy.visit("https://www.way2automation.com/way2auto_jquery/registration.php#load_box");
+})
+
 
 describe("Actions cases", function() {
 
